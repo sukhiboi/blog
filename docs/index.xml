@@ -6,9 +6,19 @@
     <description>Recent content on Blog | Sukhdev Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 26 Mar 2020 15:40:55 +0530</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming as a Life</title>
+      <link>http://example.org/programming_as_a_life/</link>
+      <pubDate>Thu, 26 Mar 2020 15:40:55 +0530</pubDate>
+      
+      <guid>http://example.org/programming_as_a_life/</guid>
+      <description>Hello this is my first blog</description>
+    </item>
     
   </channel>
 </rss>
