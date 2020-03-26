@@ -50,7 +50,7 @@ a {
 }
 
 .blog {
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.8);
   width: fit-content;
   height: fit-content;
   padding: 1.5rem 1rem;
