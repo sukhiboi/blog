@@ -39,18 +39,18 @@ body {
 
 .info {
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .info > span {
   position: relative;
   bottom: 5px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-left: 5px;
 }
 
-.info:first-child {
-  margin-left: 1rem;
+.info > img {
+  height: 1.4rem;
 }
 
 .info:last-child {

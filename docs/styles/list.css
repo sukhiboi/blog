@@ -30,7 +30,7 @@ a {
 
 .info {
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .info > img {
@@ -41,12 +41,12 @@ a {
 .info > span {
   position: relative;
   bottom: 5px;
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   margin-left: 2px;
 }
 
 .info:last-child {
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 .blog {
@@ -57,7 +57,7 @@ a {
   border-radius: 1rem;
   max-width: 20rem;
   transition: box-shadow 0.2s ease-in-out;
-  margin: 1rem .5rem;
+  margin: 1rem 0.5rem;
 }
 
 .blog:hover {
@@ -68,11 +68,15 @@ a {
 
 .title {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: auto;
   word-wrap: break-word;
 }
 
 .content {
   font-weight: 200;
+}
+
+.content > p {
+  margin: 0.6rem 0 !important;
 }
