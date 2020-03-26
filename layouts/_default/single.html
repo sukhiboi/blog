@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{.Site.BaseURL}}/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{{.Title}}</title>
+  </head>
+  <body>
+    <a href="/"
+      ><img class="backToHomepage" src="{{.Site.BaseURL}}/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">{{.Title}}</div>
+          <div class="tags flex">
+            {{range .Params.Tags}}
+            <div class="tag"><span>{{.}}</span></div>
+            {{end}}
+          </div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="{{.Site.BaseURL}}/images/calender.svg" /><span
+              >{{ dateFormat "Monday, Jan 2, 2006" .Date}}</span
+            >
+          </div>
+          <div class="info">
+            <img src="{{.Site.BaseURL}}/images/user.svg" /><span
+              >{{.Params.Author}}</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        {{.Content}}
+      </div>
+    </div>
+  </body>
+</html>
