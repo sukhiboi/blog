@@ -17,7 +17,7 @@
   </head>
   <body>
     <div>
-      <div class="header"><span>{{.Title}}</span></div>
+      <div class="header"><span>{{.Params.heading}}</span></div>
       <div class="flex flex-center">
         {{range .Pages}}<br />
         <a href="{{.RelPermalink}}"
