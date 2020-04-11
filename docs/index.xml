@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Blog | Sukhdev Singh</title>
-    <link>https://sukhiboi.github.io/blog/</link>
-    <description>Recent content in Blog on Blog | Sukhdev Singh</description>
+    <title>Blogs on Blog | Sukhdev Singh</title>
+    <link>https://sukhiboi.github.io/</link>
+    <description>Recent content in Blogs on Blog | Sukhdev Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2020 18:01:04 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 16:17:21 +0530</lastBuildDate>
     
-	<atom:link href="https://sukhiboi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sukhiboi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Introduction</title>
-      <link>https://sukhiboi.github.io/blog/introduction/</link>
-      <pubDate>Thu, 26 Mar 2020 18:08:12 +0530</pubDate>
+      <title>Intro</title>
+      <link>https://sukhiboi.github.io/intro/</link>
+      <pubDate>Sat, 11 Apr 2020 16:20:19 +0530</pubDate>
       
-      <guid>https://sukhiboi.github.io/blog/introduction/</guid>
-      <description>Hello everyone, I am Sukhdev Singh.</description>
+      <guid>https://sukhiboi.github.io/intro/</guid>
+      <description>Hello I&amp;rsquo; Sukhdev Singh.</description>
     </item>
     
   </channel>
