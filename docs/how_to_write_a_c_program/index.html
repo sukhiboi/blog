@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>How to Write a C Program</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">How to Write a C Program</div>
+          <div class="tags flex">
+            
+            <div class="tag"><span>C Programming</span></div>
+            
+            <div class="tag"><span>C</span></div>
+            
+          </div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Saturday, Apr 11, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello,<br>
+I know you came here to understand how to write a C program. But before we write a C program, I think first we should learn some basic things about C.</p>
+<p>Well C was developed by Dennis M. Ritchie and first implemented in 1972 at Bell Labs. C is a language which deals with low level stuff like memory, but the interesting part is that it is written in a high level language. Any programming language is called HLL (High Level Language), when it&rsquo;s code is easier to read by humans. C is a high level language. This conclude that the code of C is pretty easy to read and understand.</p>
+<p>For now this much knowledge is sufficient, let&rsquo;s do some digging in the practical world.</p>
+<p>A file which contains a C program will always have a extension of <strong>.c</strong>, for example <strong>example.c</strong></p>
+<p>What can be the simplest program to write in C ? Well, yes your are correct. The simplest program will be to print something on screen.</p>
+<p>Let us go step by step to write a C program which will print &ldquo;Hello&rdquo; on the screen.</p>
+<p><strong>Step 1</strong><br>
+Open any text editor in you computer. and then type the following code in the editor and save the file as &ldquo;hello.c&rdquo; to any directory/folder you like.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+{
+    printf(<span style="color:#e6db74">&#34;Hello&#34;</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+};
+</code></pre></div><p>We will understand this code in a bit.</p>
+<p><strong>Step 2</strong><br>
+Open up you terminal, and go to that directory and run the following commands.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gcc hello.c
+$ ./a.out
+</code></pre></div><p>One you run the second command, WOW suddenly &ldquo;Hello&rdquo; appears on the screen. Now you know how to run a C programme. Now let&rsquo;s take a look what happened behind the scenes.</p>
+<p>At our first step we wrote some code. Let&rsquo;s understand the meaning of each line and what each line is doing.</p>
+<p><strong>Line 1</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></code></pre></div><p>In this line we are telling C, &ldquo;<em>Hey C, I want some help from a friend of yours, i.e. stdio. Can you call him please</em> &ldquo;.</p>
+<p>Actually stdio stands for <strong>ST</strong>an<strong>D</strong>ard <strong>I</strong>nput <strong>O</strong>utput. <strong>stdio.h</strong> is a file which contains some functions which deal with input and output devices. So as we are printing some thing on screen, which means that we want C to use/interact with the screen which is a output device.</p>
+<p>So, gist of this whole para is that C will allow our program to access the function of stdio.h to use the screen, specifically in this program, it allows us to print something on screen.</p>
+<p><strong>Line 2</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> main(<span style="color:#66d9ef">void</span>)
+</code></pre></div><p>This is a interesting line. On this line we are actually start telling C what we want to do. I know you have some questions regarding what is <strong>int</strong> and <strong>void</strong>, we will cover them in the upcoming posts. For now just assume that this is staring point from we have to write the actual code.</p>
+<p>You notice these things in the code we wrote to <strong>hello.c</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">{
+
+}
+</code></pre></div><p>These are called block. You have to write you code in these blocks. Here <strong>{</strong> open parenthesis means <strong>start of the block</strong> and <strong>}</strong> close parenthesis means <strong>end of the block</strong>.</p>
+<p><strong>Line 3</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">printf(<span style="color:#e6db74">&#34;Hello&#34;</span>)
+</code></pre></div><p>Aha!! This is the most important line in the code we wrote. This is the line which actually tells C to print something on screen. So how printf works. Well the answer is simple, you have call printf. You have to write printf then call it with <strong>brackets ()</strong> and tell it to print a word in double <strong>quotes &ldquo;&quot;</strong></p>
+<hr>
+<p><strong>Interesting Fact</strong><br>
+printf is the reason why we included stdio.h. We are using printf which lives in stdio.h.</p>
+<hr>
+<p>I know we skipped the line 4, because i think this is not the right time to dive in to that stuff. For now we should assume that you need to write that line after you write code.</p>
+<p>So this is all about the code. Now let&rsquo;s understand what happen when we ran those other commands in terminal.</p>
+<p><strong>Command 1</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gcc hello.c
+</code></pre></div><p>The first thing that hits the mind is what is <strong>gcc</strong>. Well for now think of gcc as a person who is responsible for checking your code that whether it&rsquo;s correct or not.If you code have problems it will show error(s). <strong>If not then it will generate another file that your computer understands</strong>. This whole process is known as <strong>compilation</strong>. When you run this command it will compile your code and generate another file written in machine level code (which is only computer can understand, specifically the computer which compiles the code). By default gcc alway generate a file named as <strong>a.out</strong></p>
+<p><strong>Command 2</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./a.out
+</code></pre></div><p>At this point your code is converted to machine level code and your computer can understand. Now we just need to run it. So this command will run that machine level code and shows you the output.</p>
+<p>And that&rsquo;s all. Well now you know how to write a simple C programme that print something on screen.</p>
+<p>Thank you for reading.</p>
+
+      </div>
+    </div>
+  </body>
+</html>

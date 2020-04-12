@@ -6,9 +6,28 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 11 Apr 2020 16:50:43 +0530</lastBuildDate>
     
 	<atom:link href="https://sukhiboi.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C</title>
+      <link>https://sukhiboi.github.io/blog/tags/c/</link>
+      <pubDate>Sat, 11 Apr 2020 16:50:43 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C Programming</title>
+      <link>https://sukhiboi.github.io/blog/tags/c-programming/</link>
+      <pubDate>Sat, 11 Apr 2020 16:50:43 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/tags/c-programming/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

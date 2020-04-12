@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sukhiboi.github.io/blog/tags/c/</loc>
+    <lastmod>2020-04-11T16:50:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sukhiboi.github.io/blog/tags/c-programming/</loc>
+    <lastmod>2020-04-11T16:50:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sukhiboi.github.io/blog/how_to_write_a_c_program/</loc>
+    <lastmod>2020-04-11T16:50:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sukhiboi.github.io/blog/tags/</loc>
+    <lastmod>2020-04-11T16:50:43+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sukhiboi.github.io/blog/intro/</loc>
     <lastmod>2020-04-11T16:20:19+05:30</lastmod>
   </url>
@@ -14,10 +34,6 @@
   
   <url>
     <loc>https://sukhiboi.github.io/blog/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sukhiboi.github.io/blog/tags/</loc>
   </url>
   
 </urlset>
