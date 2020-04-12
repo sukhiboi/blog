@@ -43,7 +43,7 @@
         </div>
         <div class="tags flex">
           {{range .Params.Tags}}
-          <div class="tag"><span>{{.}}</span></div>
+          <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"><div><span>{{ . }}</span></div></a>
           {{end}}
         </div>
       </div>

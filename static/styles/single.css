@@ -39,6 +39,13 @@ body {
   font-size: 1rem !important;
   margin-left: 1rem;
   font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.tag:visited{
+  color: #000;
+  text-decoration: none;
 }
 
 .tag:first-child {
