@@ -28,11 +28,6 @@
       <div class="header">
         <div class="flex">
           <div class="title">{{.Title}}</div>
-          <div class="tags flex">
-            {{range .Params.Tags}}
-            <div class="tag"><span>{{.}}</span></div>
-            {{end}}
-          </div>
         </div>
         <div class="flex">
           <div class="info">
@@ -46,10 +41,18 @@
             >
           </div>
         </div>
+        <div class="tags flex">
+          {{range .Params.Tags}}
+          <div class="tag"><span>{{.}}</span></div>
+          {{end}}
+        </div>
       </div>
       <div class="content">
         {{.Content}}
       </div>
+    </div>
+    <div class="footer">
+      Do send your valuable comments and feedback via email to <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
     </div>
   </body>
 </html>

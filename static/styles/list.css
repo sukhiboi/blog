@@ -9,6 +9,7 @@ body {
 a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  outline: none;
 }
 
 .flex {
@@ -50,7 +51,7 @@ a {
 }
 
 .blog {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   width: fit-content;
   height: fit-content;
   padding: 1.5rem 1rem;

@@ -20,17 +20,22 @@ body {
 
 .tags {
   position: relative;
+  margin-top: 1rem;
 }
 
 .tag {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   height: fit-content;
   padding: 2px 15px;
   border-radius: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 1rem !important;
   margin-left: 1rem;
+  font-weight: 600;
+}
+
+.tag:first-child {
+  margin-left: 0;
 }
 
 .tag > span {
@@ -38,14 +43,14 @@ body {
 }
 
 .info {
-  font-weight: 700;
+  font-weight: 200;
   margin-top: 0.5rem;
 }
 
 .info > span {
   position: relative;
   bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 5px;
 }
 
@@ -64,7 +69,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.7);
-  line-height: 2.5rem;
+  line-height: 2.2rem;
 }
 
 .backToHomepage {
@@ -86,4 +91,8 @@ img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.footer{
+  margin-top: 2rem;
 }
