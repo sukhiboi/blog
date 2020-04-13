@@ -6,10 +6,22 @@
     <description>Recent content in C Programming on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 16:50:43 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 00:21:15 +0530</lastBuildDate>
     
 	<atom:link href="https://sukhiboi.github.io/blog/tags/c-programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Types in C</title>
+      <link>https://sukhiboi.github.io/blog/data_types_in_c/</link>
+      <pubDate>Mon, 13 Apr 2020 00:21:15 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/data_types_in_c/</guid>
+      <description>Hello,
+Today, we will learn about data types in C. So what are types?
+To understand it better, let&amp;rsquo;s see what&amp;rsquo;s variable. Variable is just a virtual box that can hold some stuff. In computing that, stuff is some data, like Integer (3, 4) or character (&amp;lsquo;s&amp;rsquo;), etc. So data type is property/attribute of that box which specify which kind of stuff/data this box can hold.
+There are many different types.</description>
+    </item>
     
     <item>
       <title>How to Write a C Program</title>

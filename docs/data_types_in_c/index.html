@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Data Types in C</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">Data Types in C</div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Monday, Apr 13, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+        <div class="tags flex">
+          
+          <a class="tag" href="/blog/tags/c"><div><span>C</span></div></a>
+          
+          <a class="tag" href="/blog/tags/c-programming"><div><span>C Programming</span></div></a>
+          
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello,<br>
+Today, we will learn about data types in C. So what are types?</p>
+<p>To understand it better, let&rsquo;s see what&rsquo;s variable. Variable is just a virtual box that can hold some stuff. In computing that, stuff is some data, like Integer (3, 4) or character (&lsquo;s&rsquo;), etc. <strong>So data type is property/attribute of that box which specify which kind of stuff/data this box can hold</strong>.</p>
+<p>There are many different types. Let&rsquo;s see the simplest data type.</p>
+<p><strong>INT</strong></p>
+<p>&ldquo;INT&rdquo; stands for Integer. This data type states that the variable will store an integer value i.e., 1, 2, 3</p>
+<p>Let&rsquo;s write a simple C program to print an integer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+{
+    <span style="color:#66d9ef">int</span> sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+    printf(<span style="color:#e6db74">&#34;%d&#34;</span>, sum);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>Let&rsquo;s understand this program line by line.</p>
+<p><strong>Line 4</strong></p>
+<p>On this line, we declare a variable and initialize it with 10. But before we go further, let&rsquo;s understand what declaration and initialization mean.<br>
+When you tell C, that you want a variable of some type, but you don&rsquo;t tell C what value it holds, it&rsquo;s a declaration.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> a;
+</code></pre></div><p>This is the declaration.
+On the other hand, when you declare a variable and give it a value, then it&rsquo;s mean that you initialize the variable with some value.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</code></pre></div><p>Here, we declare a and then initialize it with 3. So now you know what declaration and initialization are. Now let&rsquo;s understand the line 4.<br>
+The line says <em>&ldquo;Hey C, I want some space to store an integer. Please give me some space and mark it as &lsquo;sum&rsquo; and put 10 in it.&quot;</em> So C will allocate some space in memory and mark it as sum&rsquo;s space and give it to sum; also, C will put 10 in that space.</p>
+<p><strong>Line 5</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">print(<span style="color:#e6db74">&#34;%d&#34;</span>, sum);
+</code></pre></div><p>So here he comes, our old friend printf. Ok, everything&rsquo;s fine, but why are we calling him with two things this time and what so special about &ldquo;%d&rdquo;?</p>
+<p>Well yes, you have noticed that when you run the program, you won&rsquo;t get &ldquo;%d&rdquo; printed on your screen, instead value stored in sum shoes up. Before that, we should know something more about printf.</p>
+<p>Well, in C printf is a format string. Now, what&rsquo;s that? Well, a format string is a string that contains text and format specifiers. Now whats format specifiers? Well, they tell the printf in which format you should print the given parameter.</p>
+<p>So the gist is that printf can print string you want, but it can also print the variables you want, you have to tell it the right format specifier and pass that variable as the second parameter to the call, and it will print it. Now let&rsquo;s see how you can print more than one variable.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+{
+    <span style="color:#66d9ef">int</span> sum <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+    <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+    <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>;
+    printf(<span style="color:#e6db74">&#34;Sum of %d + %d is %d&#34;</span>, a, b, sum);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>So now you see how this all works. Every nth format specifier will map to every nth parameter you passed—the first %d to the first parameter, second %d to the second parameter, and same for the third.</p>
+<p>Till now, we understand what data types are how to use them, and we know what <strong>int</strong> is. Let&rsquo;s gather some more knowledge about data types.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Data type</th>
+<th align="center">What it is</th>
+<th align="center">Format Specifier</th>
+<th align="center">Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">int</td>
+<td align="center">Integer</td>
+<td align="center">%d</td>
+<td align="center">-2,147,483,648 to 2,147,483,647</td>
+</tr>
+<tr>
+<td align="center">float</td>
+<td align="center">Floating points</td>
+<td align="center">%f</td>
+<td align="center">1.2E-38 to 3.4E+38 (6 decimal places)</td>
+</tr>
+<tr>
+<td align="center">double</td>
+<td align="center">Floating points</td>
+<td align="center">%e</td>
+<td align="center">2.3E-308 to 1.7E+308 (15 decimal places)</td>
+</tr>
+<tr>
+<td align="center">char</td>
+<td align="center">character</td>
+<td align="center">%c</td>
+<td align="center">0 to 255</td>
+</tr>
+</tbody>
+</table>
+<p>And that&rsquo;s all. Now you know how to use different data types for different purposes, and you also know how to access them.</p>
+<p>Thank you for reading.</p>
+
+      </div>
+      <div class="footer">
+        Do send your valuable comments and feedback via email to
+        <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>
