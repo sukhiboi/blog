@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Transactions in Dbms</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">Transactions in Dbms</div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Wednesday, Jun 17, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+        <div class="tags flex">
+          
+          <a class="tag" href="/blog/tags/database"><div><span>database</span></div></a>
+          
+          <a class="tag" href="/blog/tags/transactions"><div><span>transactions</span></div></a>
+          
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello,
+Today we are going to learn about Transactions in Database.</p>
+<p>Transaction is basicallly a set of instruction. A group of cammands that perform some operations on the database.
+Let&rsquo;s understand it this way, You have written a js programm like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JS" data-lang="JS"><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFileSync</span>(<span style="color:#e6db74">&#39;./sample.txt&#39;</span>, <span style="color:#e6db74">&#39;Hello&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Half message sent!!&#39;</span>);  
+<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFileSync</span>(<span style="color:#e6db74">&#39;./sample.txt&#39;</span>, <span style="color:#e6db74">&#39;World&#39;</span>)
+</code></pre></div><p>Now in this code each line is a instruction to javascript that do a specific task.</p>
+<p>As in first line we said that, &ldquo;Hey Javascript, write &lsquo;Hello&rsquo; in a file names &lsquo;sample.txt&rsquo;&quot;. Similarly we tell javascript to execute the other lines.</p>
+<p>Now while running the programm, suppose when javascript was executing the line 3rd line, a system faliure occur, by which out program stops. But all the instructions before that are now succesfully executed. When you restart the system you find that in sam.txt &lsquo;Hello&rsquo; is written. But as we know this data is incomplete.</p>
+<p>So in the case of javascript it execute all the instructions before the system failuare occur, but in the case of transactions, if any error occur while executing an instruction the whole process is rolled back.</p>
+<p>If you see this understand this with our javascript example, so when the error occurs on the 3rd line everything happend before that, or every instruction executed before that will be rolled back, meand the next time you start your system you won&rsquo;t find a  file name sample.txt and obviously the &lsquo;Hello&rsquo; also will not remain.</p>
+<p>So the gist is that, a Transaction if a set of instruction, which either executed properly (means every instruction get executed) or it won&rsquo;t happen, even if something get changed, that change will be rolled back.</p>
+<p>And that&rsquo;s all, Well know you know what is a Transactions.</p>
+<p>Thanks for reading.</p>
+
+      </div>
+      <div class="footer">
+        Do send your valuable comments and feedback via email to
+        <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>

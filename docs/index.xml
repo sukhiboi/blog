@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Transactions in Dbms</title>
+      <link>https://sukhiboi.github.io/blog/transactions_in_dbms/</link>
+      <pubDate>Wed, 17 Jun 2020 19:19:18 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/transactions_in_dbms/</guid>
+      <description>Hello, Today we are going to learn about Transactions in Database.
+Transaction is basicallly a set of instruction. A group of cammands that perform some operations on the database. Let&amp;rsquo;s understand it this way, You have written a js programm like this
+fs.writeFileSync(&amp;#39;./sample.txt&amp;#39;, &amp;#39;Hello&amp;#39;) console.log(&amp;#39;Half message sent!!&amp;#39;); fs.writeFileSync(&amp;#39;./sample.txt&amp;#39;, &amp;#39;World&amp;#39;) Now in this code each line is a instruction to javascript that do a specific task.
+As in first line we said that, &amp;ldquo;Hey Javascript, write &amp;lsquo;Hello&amp;rsquo; in a file names &amp;lsquo;sample.</description>
+    </item>
+    
+    <item>
       <title>Data Types in C</title>
       <link>https://sukhiboi.github.io/blog/data_types_in_c/</link>
       <pubDate>Mon, 13 Apr 2020 00:21:15 +0530</pubDate>

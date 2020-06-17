@@ -6,10 +6,28 @@
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2020 00:21:15 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 19:19:18 +0530</lastBuildDate>
     
 	<atom:link href="https://sukhiboi.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>database</title>
+      <link>https://sukhiboi.github.io/blog/tags/database/</link>
+      <pubDate>Wed, 17 Jun 2020 19:19:18 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transactions</title>
+      <link>https://sukhiboi.github.io/blog/tags/transactions/</link>
+      <pubDate>Wed, 17 Jun 2020 19:19:18 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/tags/transactions/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>C</title>
