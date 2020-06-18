@@ -19,8 +19,19 @@
       <guid>https://sukhiboi.github.io/blog/acid_properties_of_transactions/</guid>
       <description>Hello,
 Today we will learn about the acid properties of a Transaction.
-ACID is an abbrevation for Atomicity Consestency Isonlation Durability.
+ACID is an acronym for Atomicity Consestency Isonlation Durability.
 Let&amp;rsquo;s understand what is the use of ACID properties. So if atransaction is intracting with the database, then there&amp;rsquo;s a change that it might make the database inconsistent or maybe result in data loss. This is where ACID properties comes in picture. ACID properties assure that the transaction will change the database such that it will still remain in a consistent state.</description>
+    </item>
+    
+    <item>
+      <title>Minimum Spanning Tree - Krushkal Algorithm</title>
+      <link>https://sukhiboi.github.io/blog/minium_spanning_tree_-_krushkal_algorithm/</link>
+      <pubDate>Thu, 18 Jun 2020 00:03:01 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/minium_spanning_tree_-_krushkal_algorithm/</guid>
+      <description>Hello, Today we are going to learn about the krushkal algorithm of finding a minium spanning tree. If you don&amp;rsquo;t know what is a minium spanning tree then please go and study about it on this blog post.
+The krushkal&amp;rsquo;s aglorithm says that you have to pick the edge
+ which has least weight in the graph, wont make cycle in the tree  And after that pick the next edge which is second lightest in weight, then third, then fourth&amp;hellip;.</description>
     </item>
     
     <item>

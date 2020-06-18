@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Krushkal on </title>
+    <link>https://sukhiboi.github.io/blog/tags/krushkal/</link>
+    <description>Recent content in Krushkal on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jun 2020 00:03:01 +0530</lastBuildDate>
+    
+	<atom:link href="https://sukhiboi.github.io/blog/tags/krushkal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minimum Spanning Tree - Krushkal Algorithm</title>
+      <link>https://sukhiboi.github.io/blog/minium_spanning_tree_-_krushkal_algorithm/</link>
+      <pubDate>Thu, 18 Jun 2020 00:03:01 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/minium_spanning_tree_-_krushkal_algorithm/</guid>
+      <description>Hello, Today we are going to learn about the krushkal algorithm of finding a minium spanning tree. If you don&amp;rsquo;t know what is a minium spanning tree then please go and study about it on this blog post.
+The krushkal&amp;rsquo;s aglorithm says that you have to pick the edge
+ which has least weight in the graph, wont make cycle in the tree  And after that pick the next edge which is second lightest in weight, then third, then fourth&amp;hellip;.</description>
+    </item>
+    
+  </channel>
+</rss>

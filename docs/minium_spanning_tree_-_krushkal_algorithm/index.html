@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Minimum Spanning Tree - Krushkal Algorithm</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">Minimum Spanning Tree - Krushkal Algorithm</div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Thursday, Jun 18, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+        <div class="tags flex">
+          
+          <a class="tag" href="/blog/tags/mst"><div><span>mst</span></div></a>
+          
+          <a class="tag" href="/blog/tags/minium-spanning-tree"><div><span>Minium Spanning Tree</span></div></a>
+          
+          <a class="tag" href="/blog/tags/krushkal"><div><span>Krushkal</span></div></a>
+          
+          <a class="tag" href="/blog/tags/graphs"><div><span>Graphs</span></div></a>
+          
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello,
+Today we are going to learn about the krushkal algorithm of finding a minium spanning tree.
+If you don&rsquo;t know what is a minium spanning tree then please go and study about it on this blog post.</p>
+<p>The krushkal&rsquo;s aglorithm says that you have to pick the edge</p>
+<ul>
+<li>which has least weight in the graph,</li>
+<li>wont make cycle in the tree</li>
+</ul>
+<p>And after that pick the next edge which is second lightest in weight, then third, then fourth&hellip;.. and so on.  So yeah this is the algorithm. Let&rsquo;s go through this algorith through a example.</p>
+<p>Here is a sample graph.</p>
+<p><img src="/blog/images/krushkal_algorithm/1.jpg#postImage" alt="graph"></p>
+<p>So right now our tree is empty.
+Let&rsquo;s start working on algorithm.</p>
+<p>So first we need to pick the edge with least weight. Yup you got it correct. The lightest edge is (1 - 6), it weights 10. So adding this edge to our existing tree (which is currently empty) won&rsquo;t make the tree cyclic. So we add this edge to our tree. Cool we got our first edge. Let me highlight that edge, so that we keep track of what edges left.</p>
+<p><img src="/blog/images/krushkal_algorithm/2.jpg#postImage" alt="graph"></p>
+<p>So, again we have to do the same step. Now whats the edge with least weight. Remember don&rsquo;t check the edge (1 - 6) because we already check it. So yeah whats the least weighted edge from the available one&rsquo;s. Wow you are correct again. Yes it is (4 - 3), it weight 12, which is the next lightest edge. Let me mark it. Cool, now onwards you just tell me what&rsquo;s the next lightest edge and I&rsquo;ll will mark it.</p>
+<p><img src="/blog/images/krushkal_algorithm/3.jpg#postImage" alt="graph"></p>
+<p>Ok tell me the next lightest edge??&hellip;&hellip;&hellip;..Yup exactly, it&rsquo;s (7 - 2) it weights&rsquo; 14. Remember it&rsquo;s a undirected graph so the weight of edge (7 - 2) will be same as (2 - 7), but in the case of directed graph this might not be true, or even, you won&rsquo;t have connection, like you have connection from node 2 to 7, but you won&rsquo;t have connection from 7 to 2.</p>
+<p><img src="/blog/images/krushkal_algorithm/4.jpg#postImage" alt="graph"></p>
+<p>Ok let&rsquo;s continue, What&rsquo;s the next edge????&hellip;&hellip;&hellip;True it&rsquo;s (2 - 3) it weight&rsquo;s 16. But wait, the previous edge that we entered to tree also have the node 2. I believe we should check wheater entering this edge make the tree cyclic or not&hellip;. Well no it won&rsquo;t make the tree cyclic so we can add this edge. Don&rsquo;t forget the second condition of the algorith.</p>
+<p><img src="/blog/images/krushkal_algorithm/5.jpg#postImage" alt="graph"></p>
+<p>Ok what&rsquo;s the next edge???&hellip;&hellip;&hellip;(7 - 4)&hellip;..Are you sure??? I mean yeah it&rsquo;s true that it&rsquo;s the lightest edge from the available edges, but I remember that some of the edges we entered previously contains 7  and 4 both. I insist you to check wheather adding this edge make our tree cyclic or not. Ohh see I told you no. If we add this edge we have cycle in our tree i.e (7 - 2) (2 - 3) (3 - 4) (4 - 7). In this case we will skip this edge because it doesn&rsquo;t match the criteria of described in the algorithm. So we skip this edge.</p>
+<p>What&rsquo;s next???&hellip;.Yup absolutely (4 - 5) it weight&rsquo;s 22. Did you check wheather it make cycle in tree or not. Good let&rsquo;s continue.</p>
+<p><img src="/blog/images/krushkal_algorithm/6.jpg#postImage" alt="graph"></p>
+<p>Next???&hellip;&hellip;(5 - 7)&hellip;.wait no&hellip;(5 - 6) YES!!! You got it correct, because (5 - 7) will create a cycle in the tree.</p>
+<p><img src="/blog/images/krushkal_algorithm/7.jpg#postImage" alt="graph"></p>
+<p>Next???&hellip;..Well we left we left with only one edge, which if we add it will create a cycle in the tree. Yes so now we got our minimum spanning tree, because there is no edge left to examine.</p>
+<p>Congratulation, we got our minimum spanning tree. Just look at the graph now, It looks so intersting. Now there also something you should observe, that there is no cycle in highlighted graph, also each node is connected and can be accessed from any other node.</p>
+<p><img src="/blog/images/krushkal_algorithm/7.jpg#postImage" alt="graph"></p>
+<p>Let me now explain you the algorithm in a more technical way&hellip;</p>
+<p><strong>STEP 1:</strong> Pick the edge with the least weight from the available edges.<br>
+<strong>STEP 2:</strong> If that edge doens&rsquo;t make the tree cyclic add it to tree else goto STEP 1 again until you ran out of the available edges.</p>
+<p>A good way to start is to get a list of all the edges available in the graph and sort them based on thier weight. Now every time you pick the first edge it will be the lightest from the available edges.</p>
+<p>Also you can check wheather a edge make tree cyclic or not just by checking these 2 things</p>
+<ul>
+<li>It should not be self loop.</li>
+<li>One of it&rsquo;s vertex should not present in the tree.</li>
+</ul>
+<p>If the edge satisfy these 2 criteria then adding this edge won&rsquo;t make any cycle in your tree.</p>
+<p>Well, That&rsquo;s all, Now you know how krushkal&rsquo;s algorithm works.</p>
+<p>Thanks for reading.</p>
+
+      </div>
+      <div class="footer">
+        Do send your valuable comments and feedback via email to
+        <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>

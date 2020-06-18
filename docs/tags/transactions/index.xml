@@ -19,7 +19,7 @@
       <guid>https://sukhiboi.github.io/blog/acid_properties_of_transactions/</guid>
       <description>Hello,
 Today we will learn about the acid properties of a Transaction.
-ACID is an abbrevation for Atomicity Consestency Isonlation Durability.
+ACID is an acronym for Atomicity Consestency Isonlation Durability.
 Let&amp;rsquo;s understand what is the use of ACID properties. So if atransaction is intracting with the database, then there&amp;rsquo;s a change that it might make the database inconsistent or maybe result in data loss. This is where ACID properties comes in picture. ACID properties assure that the transaction will change the database such that it will still remain in a consistent state.</description>
     </item>
     
