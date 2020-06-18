@@ -115,8 +115,8 @@ img[src*="#postImage"]{
   width: 40vw;
 }
 
-@media(max-width:425px){
+@media(max-width: 425px){
   img[src*="#postImage"]{
-    width: 100vw; 
+    width: 90vw; 
   } 
 } 
