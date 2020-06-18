@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Acid Properties of Transactions</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">Acid Properties of Transactions</div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Thursday, Jun 18, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+        <div class="tags flex">
+          
+          <a class="tag" href="/blog/tags/transactions"><div><span>transactions</span></div></a>
+          
+          <a class="tag" href="/blog/tags/database"><div><span>database</span></div></a>
+          
+          <a class="tag" href="/blog/tags/acid"><div><span>acid</span></div></a>
+          
+          <a class="tag" href="/blog/tags/dbms"><div><span>dbms</span></div></a>
+          
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello,<br>
+Today we will learn about the acid properties of a Transaction.</p>
+<p>ACID is an abbrevation for <strong>A</strong>tomicity <strong>C</strong>onsestency <strong>I</strong>sonlation <strong>D</strong>urability.</p>
+<p>Let&rsquo;s understand what is the use of ACID properties. So if atransaction is intracting with the database, then there&rsquo;s a change that it might make the database inconsistent or maybe result in data loss. This is where ACID properties comes in picture. ACID properties assure that the transaction will change the database such that it will still remain in a consistent state. Simply, if a transaction satisfy ACID properties then it assures that the database will be in a consistent state after the execution of transaction.</p>
+<p>Now let&rsquo;s understand each property one by one.</p>
+<p><strong>Atomicity:</strong> It means that all the instruction contained in transaction execute or non of them should execute at all, even if it&rsquo;s being executed and some error occur in-between then the  changes should be rolled back to previous state.</p>
+<p><strong>Consistency:</strong> No transaction should change any data other than what it&rsquo;s allowed to change. Simply, no Trasaction should have any bad effect on data stored in database.</p>
+<p><strong>Isolation:</strong> It means that a transaction should execute in such a way the it is the only transaction which is using the resources of database. Even if multiple transactiona a being executed simantaneously, no transaction should affect the existance of other transaction.</p>
+<p><strong>Durability:</strong> It means that the changes done in the database should persist in the database irresepective of and hardware/software change or faliure. The changedata should be stored in database unless it&rsquo;s again changed.</p>
+<p>Let&rsquo;s understand ACID properties with a help of an example.</p>
+<p>Suppose we both have a bank account in same bank. So our bank details including our balance is stored in the bank&rsquo;s database. Let&rsquo;s assume I have Rs 500 and you have Rs 1000.</p>
+<p>Now you have to give you Rs 600 because you bought a WiFi router from me. You choose to pay the amount via internet banking. So what will be the possible step that will occur during this transfer of money in bank.</p>
+<p><strong>STEP 1:</strong> Deduct Rs 600 from you account<br>
+<strong>STEP 2:</strong> Update your new balance i.e. 1000 - 600 = 400<br>
+<strong>STEP 3:</strong> Credit that amount in my account<br>
+<strong>STEP 4:</strong> Update my new balance i.e. 500 + 600 = 1100</p>
+<p>So this is the <strong>Transaction</strong> that will execute to transfer the money from your account to my account.</p>
+<p>Now suppose there a system faliure occur while executing STEP 3. System doesn&rsquo;t add money to account, but deducted it from you account. That&rsquo;s unfair. This means that the transaction executed partially, which is not possible. So this the place where we need that the Transaction must be <strong>atomic</strong>, either it should fully executed that means the money get deducted from your account, and also credited in to my account, or if a error occur the whole transaction should be rolled back means in our case, the money is deducted from you account should be credited back to you.</p>
+<p>Now as you see the money transfer is successfull. You have a new balance of 400 and I have a new balance of 1100. Before this transaction the sum of our money is 1000 + 500 = 1500 and after the transaction it&rsquo;s still 1100 + 400 = 1500, which means our database is still <strong>consistent</strong>. Before the transaction our database is consistent, the transaction is ony allowed to do changes on you account and mine, no other account should be touched. As you see only your and my account got changed and the change consistent.</p>
+<p>Now imagine as we are transfering money over internet banking, there most likly be other people who are transfering money. If you start a transfer at the same time someone else start the another transfer. But your transaction doen&rsquo;t depend on you transaction. Your re transfering money to me. He might be sending money to someone else. Now our transaction should not affect any his transaction and if it&rsquo;s true that means our transaction is <strong>isolated</strong>. That even if our transaction is executed simantenously with other transaction, it only aafect your and my account, no other account should get affeted from it.</p>
+<p>Now we have some money in our bank account. Suppose the software which that bank is using to perform these transaction need to get updated. To update it we have to restart the system. So <strong>durability</strong> assures that after updating the software, you, I and everyone who have account in that bank, should have same amount money they have before system reboot.</p>
+<p>So yeah that&rsquo;s all. Now you undertsand what are ACID properties of a transaction.</p>
+<p>Thanks for reading.</p>
+
+      </div>
+      <div class="footer">
+        Do send your valuable comments and feedback via email to
+        <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>

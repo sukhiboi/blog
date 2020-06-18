@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>acid on </title>
+    <link>https://sukhiboi.github.io/blog/tags/acid/</link>
+    <description>Recent content in acid on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jun 2020 08:14:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://sukhiboi.github.io/blog/tags/acid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acid Properties of Transactions</title>
+      <link>https://sukhiboi.github.io/blog/acid_properties_of_transactions/</link>
+      <pubDate>Thu, 18 Jun 2020 08:14:00 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/acid_properties_of_transactions/</guid>
+      <description>Hello,
+Today we will learn about the acid properties of a Transaction.
+ACID is an abbrevation for Atomicity Consestency Isonlation Durability.
+Let&amp;rsquo;s understand what is the use of ACID properties. So if atransaction is intracting with the database, then there&amp;rsquo;s a change that it might make the database inconsistent or maybe result in data loss. This is where ACID properties comes in picture. ACID properties assure that the transaction will change the database such that it will still remain in a consistent state.</description>
+    </item>
+    
+  </channel>
+</rss>
