@@ -9,7 +9,7 @@ tags: ["transactions", "database", "acid", "dbms"]
 Hello,   
   Today we will learn about the acid properties of a Transaction.
 
-  ACID is an abbrevation for **A**tomicity **C**onsestency **I**sonlation **D**urability.
+  ACID is an acronym for **A**tomicity **C**onsestency **I**sonlation **D**urability.
 
   Let's understand what is the use of ACID properties. So if atransaction is intracting with the database, then there's a change that it might make the database inconsistent or maybe result in data loss. This is where ACID properties comes in picture. ACID properties assure that the transaction will change the database such that it will still remain in a consistent state. Simply, if a transaction satisfy ACID properties then it assures that the database will be in a consistent state after the execution of transaction.
 

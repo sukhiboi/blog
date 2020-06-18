@@ -110,3 +110,7 @@ img {
 .footer{
   margin-top: 2rem;
 }
+
+img[src*="#postImage"]{
+  width: 40vw;
+} 
