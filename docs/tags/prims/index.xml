@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prims on </title>
+    <link>https://sukhiboi.github.io/blog/tags/prims/</link>
+    <description>Recent content in Prims on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jun 2020 13:40:12 +0530</lastBuildDate>
+    
+	<atom:link href="https://sukhiboi.github.io/blog/tags/prims/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minimum Spanning Tree - Prims Algorithm</title>
+      <link>https://sukhiboi.github.io/blog/minimum_spanning_tree_-_prims_algorithm/</link>
+      <pubDate>Thu, 18 Jun 2020 13:40:12 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/minimum_spanning_tree_-_prims_algorithm/</guid>
+      <description>Hello, Today we are going to learn about the Prims algorithm of finding a minium spanning tree. If you don’t know what is a minium spanning tree then please go and study about it on this blog post.
+So Prims algoritms says that start from a random vertex from tree put it in tree. Find all the neighbours of all the nodes in the tree excluding the one&amp;rsquo;s which are already in the tree.</description>
+    </item>
+    
+  </channel>
+</rss>

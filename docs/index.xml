@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Minimum Spanning Tree - Prims Algorithm</title>
+      <link>https://sukhiboi.github.io/blog/minimum_spanning_tree_-_prims_algorithm/</link>
+      <pubDate>Thu, 18 Jun 2020 13:40:12 +0530</pubDate>
+      
+      <guid>https://sukhiboi.github.io/blog/minimum_spanning_tree_-_prims_algorithm/</guid>
+      <description>Hello, Today we are going to learn about the Prims algorithm of finding a minium spanning tree. If you don’t know what is a minium spanning tree then please go and study about it on this blog post.
+So Prims algoritms says that start from a random vertex from tree put it in tree. Find all the neighbours of all the nodes in the tree excluding the one&amp;rsquo;s which are already in the tree.</description>
+    </item>
+    
+    <item>
       <title>Acid Properties of Transactions</title>
       <link>https://sukhiboi.github.io/blog/acid_properties_of_transactions/</link>
       <pubDate>Thu, 18 Jun 2020 08:14:00 +0530</pubDate>

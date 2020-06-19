@@ -28,16 +28,18 @@ body {
 .tags {
   position: relative;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .tag {
   position: relative;
   background-color: rgba(0, 0, 0, 0.1);
   height: fit-content;
-  padding: 2px 15px;
+  padding: 5px 15px;
   border-radius: 20px;
   font-size: 1rem !important;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   text-decoration: none;
   color: #000;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sukhiboi.github.io/blog/styles/single.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://sukhiboi.github.io/blog/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <title>Minimum Spanning Tree - Prims Algorithm</title>
+  </head>
+  <body>
+    <a href="https://sukhiboi.github.io/blog"
+      ><img class="backToHomepage" src="https://sukhiboi.github.io/blog/images/back.svg"
+    /></a>
+    <div class="root">
+      <div class="header">
+        <div class="flex">
+          <div class="title">Minimum Spanning Tree - Prims Algorithm</div>
+        </div>
+        <div class="flex">
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/calender.svg" /><span
+              >Thursday, Jun 18, 2020</span
+            >
+          </div>
+          <div class="info">
+            <img src="https://sukhiboi.github.io/blog/images/user.svg" /><span
+              >Sukhdev Singh</span
+            >
+          </div>
+        </div>
+        <div class="tags flex">
+          
+          <a class="tag" href="/blog/tags/mst"><div><span>mst</span></div></a>
+          
+          <a class="tag" href="/blog/tags/minium-spanning-tree"><div><span>Minium Spanning Tree</span></div></a>
+          
+          <a class="tag" href="/blog/tags/prims"><div><span>Prims</span></div></a>
+          
+          <a class="tag" href="/blog/tags/graphs"><div><span>Graphs</span></div></a>
+          
+        </div>
+      </div>
+      <div class="content">
+        <p>Hello, Today we are going to learn about the Prims algorithm of finding a minium spanning tree. If you don’t know what is a minium spanning tree then please go and study about it on this blog post.</p>
+<p>So Prims algoritms says that start from a random vertex from tree put it in tree. Find all the neighbours of all the nodes in the tree excluding the one&rsquo;s which are already in the tree. Now pick the vertex with smallest distance and add it to the tree. Repeat this until no vertex left in the graph which is not in tree.</p>
+<p>Now we know the theroy, let&rsquo;s understand the algorithm through an example.</p>
+<p>Here is a sample graph.</p>
+<p><img src="/blog/images/prims_algorithm/1.jpg#postImage" alt="graph"></p>
+<p>So right now our tree is empty. Let&rsquo;s start working on the algorithm.</p>
+<p>So first we need to pick a random vertex. Let&rsquo;s pick 7. Ok we pick 7, now accoring to algorithm let&rsquo;s add this to tree.</p>
+<p><img src="/blog/images/prims_algorithm/2.jpg#postImage" alt="graph"></p>
+<p>Well now our tree have one node. Acc. to algorithm let&rsquo;s see who are the neighbours of 7. Ok there a 3 neighbours, 5, 2 and 4. Now let&rsquo;s see who is closest to us. Yup right, 2 is closer than others, Let&rsquo;s add it to tree.  Also I will highlight every node we select in this process step by step.</p>
+<p><img src="/blog/images/prims_algorithm/3.jpg#postImage" alt="graph"></p>
+<p>Cool now we have 2 nodes in the tree now. Let&rsquo;s examine the neighbours of both the nodes. Ok so 7 have 3 neighbours 5, 2, and 4 but we already have 2 in our tree, so we won&rsquo;t consider it. So 7 have 2 unvisited ( didn&rsquo;t added to tree yet ) neighbours and 2 have two neighbour 3 and 1. So the next possible vertex which can be added to tree will be one of 5, 3, 1, or 4. Now from any one of the vertex which are in tree, whose neighbour is least far away from them. Let me explain this a bit. So we have 5 which is 24 units away from 7, we have 4 which is 28 units away from 7, we have 1 which is 28 units away from 2, also we have 3 which is 16 units away from 2. Now if you consider all the 4 neighbour which one is closest. Yes 3 is closest. Let&rsquo;s add 3 to the tree.</p>
+<p><img src="/blog/images/prims_algorithm/4.jpg#postImage" alt="graph"></p>
+<p>Now we have 3 nodes in the tree. Let apply the same process again. Now what all the neighbours we have that we need to consider??? Yes we have 3 neighbours. Let me list them for you. 5 and 4 which are neighbours of 7, 1 which is neighbour of 2, 3 have a neighbour 4, but we already count that because it&rsquo;s the neighbour of 7, so we won&rsquo;t count 4 again. Now, who&rsquo;s the closest???? Correct 4 is closer, but not as the neighbour of 7 but as the neighbour of 3. So we will add 4 to the tree.</p>
+<p><img src="/blog/images/prims_algorithm/5.jpg#postImage" alt="graph"></p>
+<p>Cool now we have 4 nodes in our tree. Now tell me all the neighbour nodes we have, don&rsquo;t include one&rsquo;s we alreadt visited. So how many neighbours we have to pick the next node from????? Yup we have 2 neighbours 5 and 1, Ok which one should I pick, Offcourse 5. Ok the 5 is the neighbour of 7 I&rsquo;ll pick it. NO look 5 can be reached by both 7 and 4, but the 5 is more closer to 4 than 7. Remember we have to pick the closest one. Exactly now you got it correct. let&rsquo;s add 5 which is the neightbour of 4.</p>
+<p><img src="/blog/images/prims_algorithm/6.jpg#postImage" alt="graph"></p>
+<p>Cool now we have 5 nodes in the tree. Now ame question again, tell me the neighbours&hellip;.. 6 and 1. Yup exaclty we have 2 neighbours left. Ok which one should I pick&hellip;&hellip; 6. Boom, you got it. Let me add 6 which is the neighbour of 7.</p>
+<p><img src="/blog/images/prims_algorithm/7.jpg#postImage" alt="graph"></p>
+<p>Wow now we have only one vertex remaining 1, I have to add it to tree, but 1 is the neighbour of 6 and 2. From which one i should choose???? Ofcourse from 6 because from there it&rsquo;s the least distance to 1. Correct.</p>
+<p><img src="/blog/images/prims_algorithm/8.jpg#postImage" alt="graph"></p>
+<p>Well now no vertex left, means we did it, we found the minium spanning tree from prims algorithm. Now have a look at the graph, isn&rsquo;t it look inresting. What we build is a minium spanning tree because it contains all the vertex of graph also, it doens&rsquo;t contain any cycles.</p>
+<p><img src="/blog/images/prims_algorithm/8.jpg#postImage" alt="graph"></p>
+<p>Now let me explain it to you in a technical way.</p>
+<p><strong>STEP 1:</strong> Pick a random vertx from the graph<br>
+<strong>STEP 2:</strong> Add it to tree<br>
+<strong>STEP 3:</strong> Get all the neighbour node of all the nodes in tree and select the node which has the least distance from the node you looking from. Add that node to tree also. Repeat this step until no vertes left. ( Don&rsquo;t add any already added vertex to tree)</p>
+<p>A good advice to approach this problem is to make 2 list, one of unvisited vertecies i.e the vertex which are not in tree ( initially all the vertecies of the graph ), and another one which contains all the visited vertecies that contains the vertecies which are already in the tree. Now we you have looke from one vertex just remove it from unvisited and put it in visited. This way it&rsquo;s easier to track what all vertecies are left to visit.</p>
+<p>Well that&rsquo;s all now you know how prims algorithm works.</p>
+<p>Thanks for reading.</p>
+
+      </div>
+      <div class="footer">
+        Do send your valuable comments and feedback via email to
+        <a href="mailto:41sukhdevsingh@gmail.com">41sukhdevsingh@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>
